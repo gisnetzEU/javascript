@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello</p>
+    <p id="demo">
+        
+    </p>
+    <script>
+
+        var a=5;
+        var b=6;
+        var c = a+b;
+        document.getElementById('demo').innerHTML = c;
+        
+        var fullname = 'Atilla';
+        fullname += 'Batil';
+        console.log(fullname);
+        
+
+        var asd = 6+6;
+        var test = Number('3') + 1;
+        var test1 = "3" + 1;
+        console.log(test1, "", asd, " ", test);
+
+        console.log("Substration=>", 10-5);
+        console.log("Division=>", 10/2);
+        console.log("Modulus=>", 100%10);
+        
+        let myInc = 10;
+        let myDec = 10;
+
+        myInc++;
+        ++myInc;
+
+        myDec--;
+        --myDec;
+        console.log(myInc, " ",myDec );
+        
+        var x =5;
+        x--;
+        var z = x;
+        console.log(z);
+
+        //JavaScript Comparison Operators
+
+        /*
+        ==> equal to
+        ===> equal value and equal type
+        !=> not equal
+        > greater than
+        < less than
+        >= greater than or equal to
+        <= less than or equal to
+        ? > trenary operator
+        */
+
+        var intec1= 5;
+        var intec2= 5;
+        var intec3= "5";
+        var intec4 = intec1;
+
+        console.log(intec1 == intec3); //true or false  => true
+
+        console.log(intec1 === intec3); //false
+
+        console.log(intec1 === intec4); //true
+
+        console.log(intec1 !== intec4); //true
+
+        console.log(intec1 != intec2); //true
+        console.log(intec1 > intec2); //true
+        console.log(intec1 >= intec2); //true
+
+        console.log(intec1 <= intec3); //false
+        console.log(intec1 <= intec2); //false
+        console.log(intec1 >= intec3); //false
+
+        var showMe = (intec1!=intec2) && (intec1 < intec2);
+        console.log(showMe);
+        showMe = (intec1>intec2) || (intec1 == intec2);
+        showMe = !(intec1<intec2)
+        showMe = !(false);
+
+        showMe = intec1<intec2 ? "true":"false";
+
+        if (intec1 < intec2)
+        console.log("true");
+        else console.log("false");
+
+        showMe = "String" === "String" ? "true" : "false";
+        console.log(showMe);
+
+        console.log(typeof(1));
+        console.log(typeof("1"));
+        console.log(typeof(true));
+        console.log(typeof([1,2,3,4]));
+        console.log(typeof(function(){}));
+        console.log(typeof(Nan));
+        console.log(typeof(new Date()));
+
+        var userInput = "5";
+var converteduserInput = Number(userInput);
+console.log(converteduserInput);
+
+if (typeof userInput == "string"){
+    console.log("User enter a number as String");
+    console.log(converteduserInput)
+    var converteduserInput = Number(userInput);
+
+}else
+    console.log("Ok, is an integer");
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

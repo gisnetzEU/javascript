@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Sum of N numbers</title>  
+    <script type="text/javascript">
+    function calc()
+    {
+        i=0;
+        result=0;// to store the result
+        n=document.Sample.calculate.value; //get the value of n
+        for(i=0;i<=n;i++)
+        {
+            result=result+i; //calculate the sum of n numbers
+        }
+        document.Sample.answer.value = result; // display the result
+    }
+</script>
+</head>
+<body>
+<form name="Sample">
+    Program 5. Sum of N natural numbers.<br /><br /><br />
+
+    Enter the value of N :
+  <input type="text" size="20" name="calculate"/><br />
+  <input type="button" name="Btn1" value="Calculate" onclick="calc()"/><br />
+  Result : <input type="text" size="20" name="answer"/><br />
+  <input type="reset" name="Btn2" value="Reset"/>
+</form>
+</body>
+</html>

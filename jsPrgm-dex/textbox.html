@@ -1,0 +1,35 @@
+<html>
+<head>
+   <title> Verify Textbox </title>
+   <script type="text/javascript">
+   function verify()
+   {
+    var inputs=document.getElementsByTagName('input');
+    var len=inputs.length;
+    for(var i=0;i<len;i++)
+    {
+     if(inputs[i].getAttribute('type')=='text')
+     {
+      if(inputs[i].value==0)
+      {
+       var j=i+1;
+       alert('Text box '+j+ ' is empty');
+      }   
+     }
+    }         
+   }
+   </script>
+</head>
+<body>
+  <form id="form1">
+  <br />
+     First name: <input type="text" name="firstname" /><br />
+     Last name: <input type="text" name="lastname" /><br />
+     Age : <input type="text" name="age" /><br />
+     Address : <input type="text" name="address" /><br />
+     City : <input type="text" name="city" /><br />
+     Country : <input type="text" name="country" /><br />
+     
+     <input type = "button" value = "Verify" onclick="verify()" />
+</body>
+</html>

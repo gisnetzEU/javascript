@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Date Display</title>
+    <script type="text/javascript">
+    // create Array for month and day.
+    var month = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+    var day =new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+    var d=new Date(); // creates a date object and stores todays date by default
+    //getDate() -> returns the date (1-31)
+    //getDay() -> returns the weekday(1-7)
+    //getMonth()-> returns the month (1-12)
+    //getFullYear() -> returns the year (in 4 digits) 
+    document.write("Today is - "+ d.getDate() + " - " + day[d.getDay()]+" - " + month[d.getMonth()] + " - " + d.getFullYear());
+    
+</script>
+</head>
+</html>

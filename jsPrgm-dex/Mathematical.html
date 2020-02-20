@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Mathematical Expression</title>
+    <script type="text/javascript">
+    function calc()
+    {
+       document.Sample.answer.value = eval(document.Sample.calculate.value)
+       //eval() is a builtin function to calculate the maths expression
+    }
+    </script>
+</head>
+<!-- Here 'Sample' is the form's name and 'calculate' is the element's name. Both names should be distinct. -->
+<body>
+    <form name="Sample">
+    Program 3. Mathematical Expression. <br />
+
+    Enter the Expression :<input type="text" size="20" name="calculate"/><br />
+    <input type="button" name="Btn1" value="Calculate" onclick="calc()"/><br />
+    <input type="text" size="20" name="answer"/><br />
+    <input type="reset" name="Btn2" value="Reset"/>
+    </form>
+</body>
+</html>

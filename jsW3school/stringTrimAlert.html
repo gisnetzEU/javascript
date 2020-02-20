@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String.trim()</h2>
+
+<p>Click the button to alert the string with removed whitespace.</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id = "demo">
+
+<p><strong>Note:</strong> The trim() method is not supported in Internet Explorer 8 and earlier versions.</p>
+
+<script>
+function myFunction() {
+  var str = "1     Hello World!     2";
+  //alert(str.trim());
+  document.getElementById("demo").innerHTML = str.trim();
+}
+</script>
+
+</body>
+</html>
+
