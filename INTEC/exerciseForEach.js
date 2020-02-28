@@ -22,7 +22,7 @@ var students = [
 ]
 
 function pass(student){
-    return student.score > 70
+    return student.score > 50
 }
 
 function getStudentName(student){
@@ -30,8 +30,14 @@ function getStudentName(student){
   return result;
 }
 
+
+function mySortAlgo(a,b){
+	return b.score - a.score
+	/*  22 - 65 = -43 */
+}
+
 function whoPassed(myList){
-  return myList.filter(pass).sort((a,b)=>{return a.score - b.score}).map(getStudentName)
+  return myList.filter(pass).sort(mySortAlgo).map(getStudentName)
 }
 
 console.log(whoPassed(students));

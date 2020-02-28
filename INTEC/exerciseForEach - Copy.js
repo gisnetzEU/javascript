@@ -21,23 +21,24 @@ var students = [
 }
 ]
 
-students.forEach(myFunction);
+students.forEach(mySort);
 
 function myFunction(value, index, array){
     console.log("Index=> ",index);
     console.log("Value=> ",value.score);
 }
 
-function myFunct(){
-    students.sort(function(a,b){return a.score-b.score});
-    }
-
-
-myFunct();
-
-//mynewNumbers.sort(function(a,b){return a-b})
-
-
-function getStudentName(student){
-  var result  =student.score<=70
+function pass(value, index, array){
+	if (value.score > 70){
+	console.log("Index=> ",index);
+	console.log("Value=> ",value.score);
+	console.log("Name=> ",value.name);
+	}
 }
+
+function mySort() {
+	students.sort(function(a, b){return a.score - b.score});
+	
+  }
+
+
