@@ -14,4 +14,4 @@ var lizzieTheCat = {
     }
   };
 
-  Object.keys(lizzieTheCat);
+  console.log(Object.keys(lizzieTheCat));
