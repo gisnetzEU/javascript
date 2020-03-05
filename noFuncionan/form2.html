@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <p>
+        <script>
+        var addBtn = document.getElementById('myBtn');
+        addBtn.addEventListener("click", loadHtml);
+        function loadHtml(form){
+        if (form.list.selectedIndex==0) location="art.html"
+        if (form.list.selectedIndex==1) location="astro.html"
+        if (form.list.selectedIndex==2) location="bestsell.html"
+        if (form.list.selectedIndex==3) location="business.html"
+        if (form.list.selectedIndex==4) location="children.html"
+        if (form.list.selectedIndex==5) location="computer.html"
+        if (form.list.selectedIndex==6) location="health.html"
+        if (form.list.selectedIndex==7) location="mystery.html"
+        if (form.list.selectedIndex==8) location="horror.html"
+        if (form.list.selectedIndex==9) location="nonfic.html"
+        if (form.list.selectedIndex==10) location="romance.html"
+        if (form.list.selectedIndex==11) location="science.html"
+        if (form.list.selectedIndex==12) location="scific.html"
+        if (form.list.selectedIndex==13) location="self.html"
+        if (form.list.selectedIndex==14) location="sports.html"
+        if (form.list.selectedIndex==15) location="travel.html"
+        if (form.list.selectedIndex==16) location="young.html"
+        if (form.list.selectedIndex==17) location="music.html"
+        
+        }
+        </script>
+        
+        <Form ACTION="" METHOD="GET">
+        <SELECT size="4">
+        <OPTION>Art and Drawing
+        <OPTION>Astronomy
+        <OPTION>Best Sellers
+        <OPTION>Business & Investment
+        <OPTION>Children Books
+        <OPTION selected>Computer & Internet
+        <OPTION>Health & Fitness
+        <OPTION>Mystery
+        <OPTION>Horror & Thriller
+        <OPTION>Non Fiction
+        <OPTION>Romance
+        <OPTION>Science & Nature
+        <OPTION>Science Fiction
+        <OPTION>Self Improvement
+        <OPTION>Sports & Games
+        <OPTION>Travel
+        <OPTION>Young Readers' Corner
+        <OPTION>Music
+        </SELECT>
+        <br><br>
+        <a name="myBtnEven" id="myBtnEven" class="btn btn-primary" href="#" role= "button">Go</a>
+        <!-- <INPUT value="Select a category and Click here" onClick="loadHtml(this.form)"> -->
+        </FORM>
+        
+
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

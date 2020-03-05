@@ -1,5 +1,5 @@
 
-var inputNumber = document.getElementById('inputNumber');
+var inputNumber = Number(document.getElementById('inputNumber'));
 var addBtnOdd = document.getElementById('myBtnOdd');
 var addBtnEven = document.getElementById('myBtnEven');
 var demoContent = document.getElementById("demo")

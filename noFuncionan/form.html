@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>New Page 1</title>
+</head>
+
+<body>
+
+    <script language="javascript">
+        function checktext(form) {
+            var textcontent;
+            textcontent = form.textbox.value;
+            if (form.textbox.value == "")
+                alert("the textbox is empty, please write something in the textbox")
+            else
+                document.write(textcontent);
+        }
+    </script>
+
+    <Form>
+        <input size="50">
+        <Input VALUE="Click Here" onClick="checktext(this.form)">
+    </form>
+
+</body>
+
+</html>
